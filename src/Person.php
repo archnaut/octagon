@@ -23,7 +23,14 @@ final class Person{
 		return "{$this->first_name} {$this->last_name}";
 	}
 
+	// This function seems to be declared as both instance and class member:
+	//     print $person->getDateOfBirth(); // 1984/04/06
+	//     print $person::getDateOfBorth('F j, Y') // April 6, 1984
+	// Apart from the Monostate pattern I don't see how a static method can access
+	// instance variable without being  passed the instance. Furthermore, I don't
+	// believe a method can be overloaded, whether static or instance. I am therefore
+	// assuming that a single instance method is what is desired.
 	public function getDateOfBirth(string $format = 'Y/m/d'){
-		return date_format($this->date_of_birth, $format);
-	}
+ 		return date_format($this->date_of_birth, $format);
+ 	}
 }
