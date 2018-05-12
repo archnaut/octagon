@@ -30,7 +30,7 @@ final class PersonTest extends TestCase
 
 		$this->assertEquals(
 			'April 6, 1984',	
-			$person::getDateOfBirth('F j, Y')
+			$person->getDateOfBirth('F j, Y')
 		);
 	}
 }
