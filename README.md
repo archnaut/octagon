@@ -75,7 +75,7 @@ The Units.php file, within the src directory, contains the script to query the d
 
  4. Insert data into the 'Test' table.
 
- Use the following command create the database.
+ Use the following command to create the database.
  ```
  sudo ./bash/createdb.sh [hostname]
  ```
