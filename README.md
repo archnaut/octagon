@@ -59,7 +59,7 @@ Once the dependencies has been restore you may run the tests with the following 
 
  > Write a PHP script that connects PHP to a mySQL database which has one table named 'Test' with 5 varchar columns (name them whatever you want).  Select the entire table in PHP and convert the result set to a local CSV file (with headers that coincide with the column names you created in the DB table) which automatically downloads to the user. 
 
- ### Composition 
+ ### Composition
 
 The Units.php file, within the src directory, contains the script to query the database and return a CSV file base on the results.
 
