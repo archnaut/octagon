@@ -1,13 +1,15 @@
 #!/bin/bash
 
 MYSQL=`which mysql`
+DB_HOST=${1:-localhost}
 DB='code_challenge'
 DB_USER='php'
 DB_PASSWORD='P@$$w0rd'
 DB_TABLE='Test'
+
       
 # Create DB User
-$MYSQL -uroot -t<<EOF_SQL
+$MYSQL -uroot --host=$DB_HOST -t<<EOF_SQL
 USE mysql;
 
 CREATE USER IF NOT EXISTS $DB_USER@localhost IDENTIFIED BY '$DB_PASSWORD';
