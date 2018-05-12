@@ -25,13 +25,13 @@ php src/Program.php
 
 ### Composition
 
-The solution to the first challenge is composed of two files Program.php and Person.php residing in the src directory. 
+The solution is composed of two files Program.php and Person.php residing in the src directory. 
 
 Person.php contains the definition of the Person class. Program.php creates an instance of the Person class and makes calls to its members, writing the output to the terminal. Additionally, it adds a property to Person with a name based on a randomly generated string and assigns it a value of 'xyz'. It then queries the newly created property and writes its value to the terminal.
 
 ### Testing
 
-An executable specification for the Person class can be found in the tests directory of the project. PHPUnit with Specify is used to create a Behavior Driven Development (BDD) style specification. 
+An executable specification for the Person class can be found in the tests directory of the project. PHPUnit and Specify are used to create a Behavior Driven Development (BDD) style specification. 
 
 #### Installing Dependencies
 
@@ -61,7 +61,7 @@ Once the dependencies has been restore you may run the tests with the following 
 
  ### Composition
 
-The Units.php file, within the src directory, contains the script to query the database and return a CSV file base on the results.
+The Units.php file, within the src directory, contains the script to query the database and return a CSV file based on the results.
 
  ### Database
 
@@ -69,11 +69,11 @@ The Units.php file, within the src directory, contains the script to query the d
 
  1. Create a 'code_challenge' database
 
- 2. Create a 'php@localhost' user updating the authentication plugin and granting privileges to the 'code_challenge' database.
+ 2. Create a 'php@localhost' user, updating the authentication plugin and granting privileges to the 'code_challenge' database.
 
  3. Create a 'Test' table 
 
- 4. Insert data into the test table.
+ 4. Insert data into the 'Test' table.
 
  Use the following command create the database.
  ```
